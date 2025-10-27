@@ -1,15 +1,15 @@
 const tarea = document.querySelector("textarea");
 const fipt = document.querySelector("#findtxt");
-const repipt = document.querySelector("#reptxt");
+const repipt = document.querySelector("#newtxt");
 const btn = document.querySelector("button");
 
 btn.addEventListener('click', () => {
     const findtxt = fipt.value;
-    const rertxt = repipt.value;
+    const newtxt = repipt.value;
 
     let tagtxt = tarea.value;
 
-    tagtxt = tagtxt.replaceAll(findtxt,rertxt);
+    tagtxt = tagtxt.replaceAll(findtxt,newtxt);
 
     const newelm = document.createElement("h2");
 
@@ -18,8 +18,6 @@ btn.addEventListener('click', () => {
     document.body.appendChild(newelm);
 
 });
-
-
 
 
 
